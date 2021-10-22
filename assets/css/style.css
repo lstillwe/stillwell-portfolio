@@ -1,0 +1,277 @@
+/* Universal selector is used to define font for this site */
+:root {
+    --main-background-color: rgb(78, 78, 78);
+    --accent-color: rgb(144, 204, 198);
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Element selector formatting for the header, all headings, footer, and links */
+header {
+    height: 80px;
+    background-color: var(--main-background-color);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header h1 {
+    font-weight: bold;
+    font-size: 30px;
+    display: inline-block;
+    color: var(--main-background-color);
+    background-color: var(--accent-color);
+    padding: 5px;
+    margin-left: 5px;
+}
+
+header nav {
+    margin-right: 40px;
+    font-size: 18pxpx;
+    align-items: center;
+}
+  
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--accent-color);
+    background-color: var(--main-background-color);
+    font-size: larger;
+    margin: 5px;
+    padding: 6px;
+    border-bottom: 3px solid var(--accent-color);
+    justify-items: center;
+    align-items: center;
+}
+
+ 
+/* This sizes the hero image at the top and applies Flexbox attributes to the About Me and Work sections. */
+.hero {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    background-image: url("../images/old-painted-wood-background.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.hero h2 {
+    color: var(--main-background-color);
+    background-color: var(--accent-color);
+    font-size: 28px;
+    padding: 5px;
+    margin-left: 5px;
+    position: absolute;
+    bottom: 10px;
+    right: 60px;
+    height: 40px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.content h2 {
+    font-size: 28px;
+    border-right-style: solid;
+    border-right-color: black;
+    border-right-width: thick;
+    margin-right: 20px;
+}
+
+.about-me {
+    display: inline-flex;
+    align-items: center;
+}
+.about-me h2 {
+    margin-left: 80px;
+    padding-right: 10px;
+    text-align: right;
+}
+.about-me p {
+    margin: 10px;
+}
+
+.work {
+    display: inline-flex;
+    align-items: top;
+}
+.work h2 {
+    margin-left: 90px;
+    padding-right: 10px;
+}
+
+
+/* These items create a flex container for the the portfolio items as
+   well as providing formatting and background images. */
+.image-tiles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+	width: 100%;
+    margin: 10px;
+    padding: 10px;
+}
+.image-label {
+    color: var(--main-background-color);
+    background-color: var(--accent-color);
+    padding: 5px;
+    margin-bottom: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 60px;
+}
+.image-label h3 {
+    margin: 0px;
+}
+.image-label p {
+    font-size: 14px;
+    margin: 0px;
+}
+
+.surf-report {
+    position: relative;
+    border: 5px solid var(--accent-color);
+    margin: 20px;
+    flex-basis: calc(100% - 30px);
+}
+.surf-report-img {
+    height: 300px;
+    display: block;
+    background-image: url("../images/surfer-sm.jpg");
+    background-size: cover;
+    filter: brightness(90%);
+}
+.surf-report-img:hover{
+    filter: brightness(100%);
+}
+
+.common-sub-image {
+    position: relative;
+    border: 5px solid var(--accent-color);
+    margin: 10px;
+    flex-basis: calc(50% - 30px);
+}
+
+.led-wall {
+    background-image: url("../images/led-wall.png");
+    filter: brightness(90%);
+    display: block;
+    height: 150px;
+    background-size: cover;
+}
+.led-wall:hover {
+    filter: brightness(100%);
+}
+.calculator {
+    background-image: url("../images/calculator.jpg");
+    filter: brightness(90%);
+    display: block;
+    height: 150px;
+    background-size: cover;
+}
+.calculator:hover {
+    filter: brightness(100%);
+}
+.pastel-puzzles {
+    background-image: url("../images/pastel-puzzles.jpg");
+    filter: brightness(90%);
+    display: block;
+    height: 150px;
+    background-size: cover;
+}
+.pastel-puzzles:hover {
+    filter: brightness(100%);
+}
+
+.run-buddy {
+    background-image: url("../images/run-buddy.png");
+    filter: brightness(90%);
+    display: block;
+    height: 150px;
+    background-size: cover;
+}.run-buddy:hover {
+    filter: brightness(100%);
+}
+
+.contact-me {
+    display: inline-flex;
+    align-items: center;
+}
+.contact-me h2 {
+    text-align: right;
+    margin-left: 30px;
+    padding-right: 10px;
+}
+.contact-links {
+    width: 100%;
+}
+.contact-links ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 0;
+}
+.contact-links a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    margin: 5px;
+    padding: 6px;
+    border-bottom: 3px solid;
+    justify-items: center;
+    align-items: center;
+}
+
+
+footer {
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    justify-content: center;
+}
+footer a {
+    text-decoration: none;
+    color: black;
+    border-bottom: 3px solid var(--main-background-color);
+    padding: 4px;
+    margin: 3px 20px 3px 20px;
+}
+
+/* Media query resizes tiles when resolution is below 700 pixels in width*/
+@media screen and (max-width: 700px) {
+    .led-wall {
+        flex-basis: calc(100% - 30px);
+    }
+    .calculator {
+        flex-basis: calc(100% - 30px);
+    }
+    .pastel-puzzles {
+        flex-basis: calc(100% - 30px);
+    }
+    .run-buddy {
+        flex-basis: calc(100% - 30px);
+    }
+
+    .contact-links a {
+        border-bottom: 0px;
+        text-decoration-line: underline;
+    }
+}
