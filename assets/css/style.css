@@ -90,7 +90,7 @@ header a {
 }
 
 .content h2 {
-    font-size: 28px;
+    font-size: 27px;
     border-right-style: solid;
     border-right-color: black;
     border-right-width: thick;
@@ -250,6 +250,7 @@ header a {
 /* footer design */
 footer {
     display: flex;
+    flex-wrap: wrap;
     flex-basis: 100%;
     align-items: center;
     justify-content: center;
@@ -276,7 +277,6 @@ footer a {
     .run-buddy {
         flex-basis: calc(100% - 30px);
     }
-
     .contact-links a {
         border-bottom: 0px;
         text-decoration-line: underline;
