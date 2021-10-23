@@ -9,7 +9,8 @@
     box-sizing: border-box;
 }
 
-/* Element selector formatting for the header, all headings, footer, and links */
+/* Element selector formatting for the header 
+   use space between to push name and nav links to oposite side of the page */
 header {
     height: 80px;
     background-color: var(--main-background-color);
@@ -19,6 +20,7 @@ header {
     justify-content: space-between;
 }
 
+/* setup for the portfolio name text */
 header h1 {
     font-weight: bold;
     font-size: 30px;
@@ -29,12 +31,12 @@ header h1 {
     margin-left: 5px;
 }
 
+/* setup for header nav links */
 header nav {
     margin-right: 40px;
-    font-size: 18pxpx;
+    font-size: 16px;
     align-items: center;
-}
-  
+} 
 header nav ul {
     display: flex;
     flex-wrap: wrap;
@@ -42,7 +44,6 @@ header nav ul {
     align-items: center;
     list-style: none;
 }
-
 header a {
     text-decoration: none;
     color: var(--accent-color);
@@ -56,7 +57,8 @@ header a {
 }
 
  
-/* This sizes the hero image at the top and applies Flexbox attributes to the About Me and Work sections. */
+/* This sizes the hero image at the top and applies 
+   flexbox attributes to the About Me and Work sections. */
 .hero {
     position: relative;
     width: 100%;
@@ -66,6 +68,7 @@ header a {
     background-position: center;
 }
 
+/* cool subtext label setup for display on top of hero image */
 .hero h2 {
     color: var(--main-background-color);
     background-color: var(--accent-color);
@@ -78,6 +81,8 @@ header a {
     height: 40px;
 }
 
+/* main content section of the page */
+/* three main sections here - about me, work projects, and contact info */
 .content {
     display: flex;
     flex-direction: column;
@@ -92,6 +97,8 @@ header a {
     margin-right: 20px;
 }
 
+
+/* about me  */
 .about-me {
     display: inline-flex;
     align-items: center;
@@ -105,6 +112,7 @@ header a {
     margin: 10px;
 }
 
+/* work projects - includes setup of clickable images */
 .work {
     display: inline-flex;
     align-items: top;
@@ -112,6 +120,7 @@ header a {
 .work h2 {
     margin-left: 90px;
     padding-right: 10px;
+    text-align: right;
 }
 
 
@@ -122,10 +131,11 @@ header a {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-	width: 100%;
+	flex-basis: 100%;
     margin: 10px;
     padding: 10px;
 }
+/* common style for image label text */
 .image-label {
     color: var(--main-background-color);
     background-color: var(--accent-color);
@@ -144,6 +154,7 @@ header a {
     margin: 0px;
 }
 
+/* surf report image handled a little from the others */
 .surf-report {
     position: relative;
     border: 5px solid var(--accent-color);
@@ -161,39 +172,36 @@ header a {
     filter: brightness(100%);
 }
 
-.common-sub-image {
+/* common properties for the rest of the image divs */
+.common-sub-image-div {
     position: relative;
     border: 5px solid var(--accent-color);
     margin: 10px;
     flex-basis: calc(50% - 30px);
 }
-
-.led-wall {
-    background-image: url("../images/led-wall.png");
+/* common design for images themselves */
+.common-sub-img {
     filter: brightness(90%);
     display: block;
     height: 150px;
     background-size: cover;
+}
+/* define image files for each sub image
+   also set hover effect */
+.led-wall {
+    background-image: url("../images/led-wall.png");
 }
 .led-wall:hover {
     filter: brightness(100%);
 }
 .calculator {
     background-image: url("../images/calculator.jpg");
-    filter: brightness(90%);
-    display: block;
-    height: 150px;
-    background-size: cover;
 }
 .calculator:hover {
     filter: brightness(100%);
 }
 .pastel-puzzles {
     background-image: url("../images/pastel-puzzles.jpg");
-    filter: brightness(90%);
-    display: block;
-    height: 150px;
-    background-size: cover;
 }
 .pastel-puzzles:hover {
     filter: brightness(100%);
@@ -201,25 +209,24 @@ header a {
 
 .run-buddy {
     background-image: url("../images/run-buddy.png");
-    filter: brightness(90%);
-    display: block;
-    height: 150px;
-    background-size: cover;
 }.run-buddy:hover {
     filter: brightness(100%);
 }
 
+/* contact me section */
 .contact-me {
     display: inline-flex;
     align-items: center;
 }
 .contact-me h2 {
     text-align: right;
-    margin-left: 30px;
+    margin-left: 45px;
     padding-right: 10px;
 }
 .contact-links {
     width: 100%;
+    margin-right: 5%;
+    margin-left: 3%;
 }
 .contact-links ul {
     display: flex;
@@ -235,12 +242,12 @@ header a {
     font-size: 20px;
     margin: 5px;
     padding: 6px;
-    border-bottom: 3px solid;
+    border-bottom: 3px solid;   
     justify-items: center;
     align-items: center;
 }
 
-
+/* footer design */
 footer {
     display: flex;
     flex-basis: 100%;
