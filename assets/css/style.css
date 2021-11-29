@@ -188,10 +188,10 @@ header a {
 }
 /* define image files for each sub image
    also set hover effect */
-.led-wall {
-    background-image: url("../images/led-wall.png");
+.movie-quiz {
+    background-image: url("../images/movie-quiz.png");
 }
-.led-wall:hover {
+.movie-quiz:hover {
     filter: brightness(100%);
 }
 .calculator {
