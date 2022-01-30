@@ -200,10 +200,10 @@ header a {
 .calculator:hover {
     filter: brightness(100%);
 }
-.pastel-puzzles {
-    background-image: url("../images/pastel-puzzles.jpg");
+.media-gems {
+    background-image: url("../images/media_gems.png");
 }
-.pastel-puzzles:hover {
+.media-gems:hover {
     filter: brightness(100%);
 }
 
